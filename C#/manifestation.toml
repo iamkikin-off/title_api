@@ -1,0 +1,17 @@
+
+id = "ColorfulNames"
+name = "ColorfulNames"
+description = "This mod lets you to have colored names!"
+version = "1.0.0"
+homepage = ""
+author = "IamKikin"
+
+icon = "icon.png"
+readme = "README.md"
+
+[project]
+csharp = "./ColorfulNames/ColorfulNames.csproj"
+godot = "./project/project.godot"
+
+[[dependencies]]
+thunderstore_version = "NotNet-GDWeave-2.0.13"
