@@ -1,0 +1,9 @@
+{
+    "name": "TitleAPI",
+    "description": "Allows Mod Developers to register their own Titles!",
+    "version_number": "1.0.1",
+    "website_url": "",
+    "dependencies": [
+        "NotNet-GDWeave-2.0.12"
+    ]
+}

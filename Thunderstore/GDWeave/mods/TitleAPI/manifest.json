@@ -1,0 +1,11 @@
+{
+    "Id": "TitleAPI",
+    "PackPath": "TitleAPI.pck",
+    "AssemblyPath": "ColorfulNames.dll",
+    "Metadata": {
+        "Name": "TitleAPI",
+        "Author": "IamKikin & Nowaha",
+        "Version": "1.0.1",
+        "Description": "Register your own Titles! **DEVELOPER API!**"
+    }
+}
