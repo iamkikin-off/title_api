@@ -1,5 +1,7 @@
 extends Node
 
+signal titles_updated
+
 var plr_titles = {} # The dictionary where titles go.
 var prefix = "[TitleAPI] " # Prefix of the mod
 
@@ -18,7 +20,8 @@ func get_title(player_id):
 # Register a new title for a player
 func register_title(id, title):
 	plr_titles[id] = title
-	
+	emit_signal("titles_updated")
+
 	# -- DEBUG --
 	print(prefix + "Successfully set title to: " + title + ", for: " + str(id))
 	print(prefix + "" + str(id) + " has a title: " + plr_titles[id])
@@ -26,6 +29,7 @@ func register_title(id, title):
 
 func deregister_title(player_id):
 	plr_titles.erase(player_id)
+	emit_signal("titles_updated")
 	
 	# -- DEBUG --
 	print(prefix + "Successfully removed title for: " + str(player_id))
